@@ -1,6 +1,6 @@
 from django.urls import path
-from portalapp.views import example_view
+from portalapp.views import BaseView
 
 urlpatterns = [
-    path('', example_view)
+    path('', BaseView.as_view(), name='base'),
 ]
